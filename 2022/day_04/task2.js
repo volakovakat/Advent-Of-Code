@@ -29,7 +29,6 @@ fs.readFile('./input.txt', 'utf8', (err, data) => {
     }
     const duplicates = interval1.filter(element => interval2.includes(element));
     const duplicatesReverse = interval2.filter(element => interval1.includes(element));
-    result = duplicates.length;
 
     if (duplicates.length > 0 || duplicatesReverse.length > 0) {
       duplicationList.push(1);
